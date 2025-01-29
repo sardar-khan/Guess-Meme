@@ -1,0 +1,67 @@
+.win2000-select-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.win2000-select {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    border: 4px solid gray;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    cursor: pointer;
+    width: 100%;
+    min-width: 110px;
+    height: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Add an arrow to the right of the dropdown */
+.win2000-select::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: translateY(-65%) rotate(-45deg);
+}
+
+.win2000-dropdown-options {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 2px solid gray;
+    z-index: 2000;
+}
+
+.win2000-option {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.win2000-option:hover {
+    background-color: #f4f4f4;
+}
